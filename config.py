@@ -6,7 +6,7 @@ SUPABASE_SQLALCHEMY_DATABASE_URI = "postgresql://postgres.ctykwvijvbgtbkgqiwyq:v
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 INSTANCE_DIR = os.path.join(BASE_DIR, 'instance')
-DB_PATH = os.path.join(INSTANCE_DIR, 'versatales.db')
+DB_PATH = os.path.join(INSTANCE_DIR, 'versatales_official.db')
 
 os.environ.setdefault('DATABASE_URL', SUPABASE_SQLALCHEMY_DATABASE_URI)
 
@@ -19,9 +19,9 @@ if not os.path.exists(INSTANCE_DIR):
 
 class Config:
     SITE_URL = "https://kl-versatales-official-backend.onrender.com"
-    SECRET_KEY = os.environ.get('SECRET_KEY', 'versatalas-secret-key')
+    SECRET_KEY = os.environ.get('SECRET_KEY', 'versatales-secret-key')
 
-    if os.environ.get('FLASK_ENV') == 'development':
+    if os.environ.get('FLASK_ENV') == 'development' :
         # Use SQLite for development
         print("Local Database Accessing...")
         SQLALCHEMY_DATABASE_URI = 'sqlite:///' + DB_PATH
