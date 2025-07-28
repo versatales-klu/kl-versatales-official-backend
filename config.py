@@ -18,7 +18,7 @@ if not os.path.exists(INSTANCE_DIR):
     os.makedirs(INSTANCE_DIR)
 
 class Config:
-    SITE_URL = "https://versatales-official-backend.onrender.com"
+    SITE_URL = "https://kl-versatales-official-backend.onrender.com"
     SECRET_KEY = os.environ.get('SECRET_KEY', 'versatalas-secret-key')
 
     if os.environ.get('FLASK_ENV') == 'development':
