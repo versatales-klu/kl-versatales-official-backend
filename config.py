@@ -2,7 +2,7 @@ import os
 
 
 
-SUPABASE_SQLALCHEMY_DATABASE_URI = "postgresql://postgres.ctykwvijvbgtbkgqiwyq:verssatales@191199@aws-0-ap-south-1.pooler.supabase.com:6543/postgres"
+SUPABASE_SQLALCHEMY_DATABASE_URI = "postgresql://postgres.ctykwvijvbgtbkgqiwyq:verssatales@aws-0-ap-south-1.pooler.supabase.com:6543/postgres"
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 INSTANCE_DIR = os.path.join(BASE_DIR, 'instance')
