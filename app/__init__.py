@@ -18,7 +18,9 @@ def create_app():
     migrate.init_app(app, db)  # << add this
 
     from .routes import app as app_routes
+    from .roleRegistration import role_registration_routes
 
     app.register_blueprint(app_routes, url_prefix='/')
+    app.register_blueprint(role_registration_routes, url_prefix='/role-registration')
 
     return app

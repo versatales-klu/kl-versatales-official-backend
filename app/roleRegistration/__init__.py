@@ -1,0 +1,1 @@
+from .routes import role_registration_bp as role_registration_routes
